@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -36,6 +37,12 @@ public class TechJobsTest {
         Path path = FileSystems.getDefault().getPath(fileName);
         return Files.readString(path);
     }
+//    private static String[] splitLines(String text) {
+//        if (text == null) {
+//            return null;
+//        }
+//        return text.split("//R");
+//    }
 
     @Test
     public void testPrintJobs() throws IOException {
